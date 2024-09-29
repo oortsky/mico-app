@@ -1,16 +1,42 @@
 ---
-
+import Layout from "../layouts/Layout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Home">
+  <section>
+    <h1>Welcome to Mico</h1>
+    <p>
+      Mico is a multi-purpose Discord bot that helps you with a variety of tasks, including:
+    </p>
+    <ul>
+      <li><strong>Earthquake Data:</strong> Get real-time updates on seismic activities around the world.</li>
+      <li><strong>Commuter Line Information:</strong> Check live schedules and updates for commuter trains.</li>
+      <li><strong>Space Imagery:</strong> Receive daily images of space from trusted sources like NASA.</li>
+      <li><strong>AI Chatbot:</strong> Have interactive conversations with Mico for casual queries or questions.</li>
+    </ul>
+
+    <p>
+      To add Mico to your Discord server, simply follow <a href="https://discord.com/oauth2/authorize?client_id=1230073861580783647" target="_blank">this link</a>.
+    </p>
+
+    <h2>How to Use Mico</h2>
+    <p>
+      Once Mico is in your server, you can use the following commands:
+    </p>
+    <ul>
+      <li><code>/earthquake</code>: Get the latest earthquake data.</li>
+      <li><code>/comuline</code>: Check live train schedules and delays.</li>
+      <li><code>/apod</code>: See the space image of the day.</li>
+      <li><code>/mico</code>: Interact with Mico’s AI for casual chat or queries.</li>
+    </ul>
+
+    <h2>Why Choose Mico?</h2>
+    <p>
+      With Mico, you get a powerful, easy-to-use bot that combines essential real-time data with entertainment and AI features, all in one package!
+    </p>
+
+    <p>
+      For more information, visit our <a href="/terms-of-service">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>.
+    </p>
+  </section>
+</Layout>

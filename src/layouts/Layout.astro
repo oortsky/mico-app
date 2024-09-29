@@ -1,0 +1,32 @@
+---
+const { title } = Astro.props;
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{title} | Mico Bot</title>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/terms-of-service">Terms of Service</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<slot />
+</main>
+
+<footer>
+<p>
+&copy; {new Date().getFullYear()} Mico Bot. All rights reserved.
+</p>
+</footer>
+</body>
+</html>
